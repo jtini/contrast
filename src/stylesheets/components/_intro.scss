@@ -1,9 +1,25 @@
+.intro {
+	background-color: $introBg;
+
+	h1,
+	h3 {
+		z-index: 1;
+	}
+
+	h1 { color: #fff; }
+
+	h3 { color: #E63462; }
+}
+
 .intro__background {
 	position: absolute;
 	width: 100%;
-	z-index: -1;
+}
+
+.background-image__fill {
+	fill: darken($introBg, 5%);
 }
 
 .background-image__clip {
-	fill: $background;
+	fill: $introBg;
 }

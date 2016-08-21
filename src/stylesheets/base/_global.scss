@@ -29,9 +29,6 @@ footer,
 	align-content: center;
 	height: 100vh;
 	padding: 2.5em;
-	&:nth-child(even) {
-		background-color: #ccc;
-	}
 }
 
 .text,
@@ -40,7 +37,7 @@ footer,
 }
 
 .illustration {
-	background-color: #bbb;
+	background-color: #FFF;
 }
 
 .illustration:after {

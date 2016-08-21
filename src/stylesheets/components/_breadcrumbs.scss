@@ -17,6 +17,7 @@
 	border-radius: 50%;
 	background-color: lighten($body, 60%);
 	color: $body;
+	opacity: .4;
 
 	&:before {
 		@extend %caps;
