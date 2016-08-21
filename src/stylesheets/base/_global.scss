@@ -38,6 +38,16 @@ footer,
 	width: 100%;
 }
 
+.illustration {
+	background-color: #bbb;
+}
+
+.illustration:after {
+	content: '';
+	display: block;
+	padding-top: 100%;
+}
+
 h1,
 h2,
 h3,
