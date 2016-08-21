@@ -98,9 +98,11 @@
 			<div class="illustration"></div>
 		</section>
 		<footer>
-			<h2>Credits</h2>
-			<p>This website was inspired by the pioneering work of Johannes Itten and Josef Albers, and created by Jeremy Tinianow.</p>
-			<button>Colophon</button>
+			<div class="footer__top">
+				<h2>Credits</h2>
+				<p>This website was inspired by the pioneering work of Johannes Itten and Josef Albers, and created by Jeremy Tinianow.</p>
+			</div>
+			<label for="colophon-toggle" class="btn">Colophon</label>
 		</footer>
 	</main>
 	<nav class="breadcrumbs">
@@ -114,6 +116,7 @@
 		<div class="breadcrumb-item"></div>
 		<div class="breadcrumb-item"></div>
 	</nav>
+	<input id="colophon-toggle" class="colophon-toggle" type="checkbox" aria-hidden="true">
 	<div class="colophon">
 		<h4>Buit With</h4>
 		<p>https://github.com/vigetlabs/gulp-starter</p>
@@ -130,6 +133,6 @@
 			<li class="colophon__list-item">“The Art of Color” by Johannes Itten</li>
 			<li class="colophon__list-item">“The Elements of Color” by Johannes Itten</li>
 		</ul>
-		<div class="close">×</div>
+		<label for="colophon-toggle" class="close">×</label>
 	</div>
 {% endblock %}

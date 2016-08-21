@@ -77,3 +77,11 @@ ul {
 	padding-left: 0;
 	list-style-type: none;
 }
+
+.btn {
+	padding: 1em 2em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: 2px solid $body;
+	cursor: pointer;
+}
