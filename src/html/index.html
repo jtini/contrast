@@ -7,5 +7,110 @@
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-  <h1 data-module="example">Hello World!</h1>
+	<main class="content">
+		<section class="intro">
+			<h1>Seven Types of Contrast</h1>
+			<h3>An Introduction to Color Theory</h3>
+		</section>
+		<section class="panel">
+			<div class="text">
+				<h2>Contrast of Hue</h2>
+				<p>Created by the use of two distinct hues.</p>
+				<ul class="color-list">
+					<li class="color-list__item">— RGB 255, 255, 255</li>
+					<li class="color-list__item">— RGB 255, 255, 255</li>
+				</ul>
+			</div>
+			<div class="illustration"></div>
+		</section>
+		<section class="panel">
+			<div class="text">
+				<h2>Contrast of Value</h2>
+				<p>Use of a lighter color combined with a darker color.</p>
+				<ul class="color-list">
+					<li class="color-list__item">— RGB 255, 255, 255</li>
+					<li class="color-list__item">— RGB 255, 255, 255</li>
+				</ul>
+			</div>
+			<div class="illustration"></div>
+		</section>
+		<section class="panel">
+			<div class="text">
+				<h2>Contrast of Temperature</h2>
+				<p>The contrast between cool (blue, green, purple) and warm (red, orange, yellow) colors.</p>
+				<ul class="color-list">
+					<li class="color-list__item">— RGB 255, 255, 255</li>
+					<li class="color-list__item">— RGB 255, 255, 255</li>
+				</ul>
+			</div>
+			<div class="illustration"></div>
+		</section>
+		<section class="panel">
+			<div class="text">
+				<h2>Contrast of Complement</h2>
+				<p>Manifested through the combination of colors opposite one another on the color wheel.</p>
+				<ul class="color-list">
+					<li class="color-list__item">— RGB 255, 255, 255</li>
+					<li class="color-list__item">— RGB 255, 255, 255</li>
+				</ul>
+			</div>
+			<div class="illustration"></div>
+		</section>
+		<section class="panel">
+			<div class="text">
+				<h2>Simultaneous Contrast</h2>
+				<p>A contrast between nearly but not quite complementary colors.</p>
+				<ul class="color-list">
+					<li class="color-list__item">— RGB 255, 255, 255</li>
+					<li class="color-list__item">— RGB 255, 255, 255</li>
+				</ul>
+			</div>
+			<div class="illustration"></div>
+		</section>
+		<section class="panel">
+			<div class="text">
+				<h2>Contrast of Saturation</h2>
+				<p>The difference between a pure and a washed out color.</p>
+				<ul class="color-list">
+					<li class="color-list__item">— RGB 255, 255, 255</li>
+					<li class="color-list__item">— RGB 255, 255, 255</li>
+				</ul>
+			</div>
+			<div class="illustration"></div>
+		</section>
+		<section class="panel">
+			<div class="text">
+				<h2>Contrast of Proportion</h2>
+				<p>Contrast achieved by difference of relative proportion.</p>
+				<ul class="color-list">
+					<li class="color-list__item">— RGB 255, 255, 255</li>
+					<li class="color-list__item">— RGB 255, 255, 255</li>
+				</ul>
+			</div>
+			<div class="illustration"></div>
+		</section>
+		<footer>
+			<h2>Credits</h2>
+			<p>This website was inspired by the pioneering work of Johannes Itten and Josef Albers, and created by Jeremy Tinianow.</p>
+			<button>Colophon</button>
+		</footer>
+	</main>
+	<div class="colophon">
+		<h4>Buit With</h4>
+		<p>https://github.com/vigetlabs/gulp-starter</p>
+		<h4>Fonts</h4>
+		<p>Futura PT by ParaType</p>
+		<h4>References</h4>
+		<ul class="colophon__list">
+			<li class="colophon__list-item">Johannes Itten</li>
+			<li class="colophon__list-item">Josef Albers</li>
+		</ul>
+		<h4>Further Reading</h4>
+		<ul class="colophon__list">
+			<li class="colophon__list-item">“Interaction of Color” by Josef Albers</li>
+			<li class="colophon__list-item">“The Art of Color” by Johannes Itten</li>
+			<li class="colophon__list-item">“The Elements of Color” by Johannes Itten</li>
+		</ul>
+		<div class="close">×</div>
+	</div>
 {% endblock %}
