@@ -12,10 +12,36 @@
 
 .breadcrumb-item {
 	position: relative;
-	margin-bottom: 1em;
+	margin: .5em 0;
 	width: 4px;
 	border-radius: 50%;
 	background-color: lighten($body, 60%);
+	color: $body;
+
+	&:before {
+		@extend %caps;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: em(200, 10);
+		transform: translate(10px, -50%);
+		font-size: em(10, 18);
+		line-height: 1;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 300ms ease, visibility 0s linear 600ms;
+		cursor: pointer;
+	}
+
+	&:nth-child(1):before { content: 'Intro'}
+	&:nth-child(2):before { content: 'Contrast of Hue'}
+	&:nth-child(3):before { content: 'Contrast of Value'}
+	&:nth-child(4):before { content: 'Contrast of Temperature'}
+	&:nth-child(5):before { content: 'Contrast of Complement'}
+	&:nth-child(6):before { content: 'Simultaneous Contrast'}
+	&:nth-child(7):before { content: 'Contrast of Saturation'}
+	&:nth-child(8):before { content: 'Contrast of Proportion'}
+	&:nth-child(9):before { content: 'Credits'}
 
 	&:after {
 		content: '';
@@ -23,5 +49,11 @@
 		padding-top: 100%;
 	}
 
-	&:last-child { margin-bottom: 0; }
+	@include gtDesktop {
+		&:hover:before {
+			opacity: 1;
+			visibility: visible;
+			transition: opacity 300ms ease;
+		}
+	}
 }

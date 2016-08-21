@@ -66,9 +66,8 @@ h3,
 h4 { font-size: 1.67em; }
 
 h4 {
+	@extend %caps;
 	margin-bottom: 0.25em;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 }
 
 
@@ -80,9 +79,8 @@ ul {
 }
 
 .btn {
+	@extend %caps;
 	padding: 1em 2em;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	border: 2px solid $body;
 	cursor: pointer;
 }
