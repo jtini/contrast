@@ -31,19 +31,8 @@ footer,
 	padding: 2.5em;
 }
 
-.text,
-.illustration {
+.text {
 	width: 100%;
-}
-
-.illustration {
-	background-color: #FFF;
-}
-
-.illustration:after {
-	content: '';
-	display: block;
-	padding-top: 100%;
 }
 
 h1,

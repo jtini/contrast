@@ -1,0 +1,33 @@
+.illustration {
+	position: relative;
+	width: 100%;
+	background-color: #FFF;
+}
+
+.illustration:after {
+	content: '';
+	display: block;
+	padding-top: 100%;
+}
+
+.illustration__background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.illustration__foreground {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 16%;
+	transform: translate(-50%, -50%);
+
+	&:after {
+		content: '';
+		display: block;
+		padding-top: 178%;
+	}
+}
