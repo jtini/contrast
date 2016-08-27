@@ -19,17 +19,22 @@ body {
 	background-color: $background;
 }
 
-section,
+.intro,
+.panel,
 footer,
 .colophon {
 	display: flex;
 	flex-flow: column;
-	justify-content: center;
 	align-items: center;
 	align-content: center;
 	height: 100vh;
 	padding: 2.5em;
 }
+
+.intro,
+footer { justify-content: center; }
+
+.panel { justify-content: space-between; }
 
 .text {
 	width: 100%;
