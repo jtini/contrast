@@ -29,6 +29,16 @@ footer,
 	align-content: center;
 	height: 100vh;
 	padding: 2.5em;
+
+	@supports (display: grid) {
+		display: grid;
+		grid-template-columns: 1fr;
+
+		@include gtTablet {
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 2em;
+		}
+	}
 }
 
 .intro,
