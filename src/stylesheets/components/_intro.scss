@@ -4,6 +4,7 @@
 	h1,
 	h3 {
 		z-index: 1;
+		text-align: center;
 
 		@supports (display: grid) {
 			grid-column: 1 / 2;

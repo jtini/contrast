@@ -7,18 +7,12 @@ $desktop-hd: 1200px;
 
 // Colors
 $transparent: rgba(0, 0, 0, 0);
-$overlay-dark: rgba(0, 0, 0, 0.9);
+$overlay-dark: rgba(0, 0, 5, 0.92);
 $white: #fff;
-$light-grey: #eee;
-$body: #272727;
+$light-grey: #dbd7d7;
+$body: #2d2d2f;
 $background: #fafafa;
 $intro-bg: #272932;
-$cyan: #07e0ef;
+$cyan: rgb(75, 202, 255);
 $cool-grey: #c9daea;
-$red: #DE544A;
-
-// Styles
-%caps {
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
+$red: rgb(204, 74, 65);

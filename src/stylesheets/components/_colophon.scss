@@ -20,7 +20,7 @@
 	ul,
 	li,
 	a,
-	label { color: $white; }
+	label { color: $light-grey; }
 }
 
 .colophon-toggle {
@@ -29,6 +29,12 @@
 
 .colophon__list {
 	width: 100%;
+	margin-top: 0.25em;
+}
+
+.colophon__list-item {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
 }
 
 .close {

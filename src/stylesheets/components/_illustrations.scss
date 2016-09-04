@@ -5,6 +5,10 @@
 	background-color: $white;
 
 	@include gt-tablet { width: 100%; }
+
+	@supports (display: grid) {
+		@include gt-tablet { justify-self: start; }
+	}
 }
 
 .illustration:after {

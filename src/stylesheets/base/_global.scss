@@ -35,16 +35,6 @@ footer {
 	align-items: center;
 	height: 100vh;
 	padding: 2.5em;
-
-	@supports (display: grid) {
-		display: grid;
-		grid-template-columns: 1fr;
-
-		@include gt-tablet {
-			grid-template-columns: 1fr 1fr;
-			grid-gap: 2em;
-		}
-	}
 }
 
 .panel,
@@ -60,14 +50,29 @@ footer {
 .panel {
 	justify-content: space-between;
 
+
+
 	@supports (display: grid) {
+		display: grid;
+		grid-template-columns: 1fr;
 		justify-items: center;
 		align-content: space-between;
+
+		@include gt-tablet {
+			align-content: center;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 2em;
+		}
 	}
 }
 
 .text {
 	width: 100%;
+	max-width: em(480, 18);
+
+	@supports (display: grid) {
+		@include gt-tablet { justify-self: end; }
+	}
 }
 
 h1,
@@ -93,7 +98,6 @@ h4 {
 }
 
 h4 {
-	@extend %caps;
 	margin-bottom: 0.25em;
 }
 
@@ -107,8 +111,8 @@ ul {
 }
 
 .btn {
-	@extend %caps;
 	padding: 1em 2em;
+	text-transform: uppercase;
 	border: 2px solid $body;
 	cursor: pointer;
 }
