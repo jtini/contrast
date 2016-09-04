@@ -1,33 +1,37 @@
-* {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: $transparent;
 }
 
 html {
-  height: 100%;
-  font-size: 12px;
-  @include gtTablet { font-size: 18px; }
+	height: 100%;
+	font-size: 12px;
+
+	@include gt-tablet {
+		font-size: 18px;
+	}
 }
 
 body {
-  @include font-smoothing;
-  height: 100%;
-	// font-family: 'Futura', Helvetica, Arial, sans-serif;
+	@include font-smoothing;
+	height: 100%;
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-  font-size: 100%;
-  line-height: 1.5;
+	font-size: 100%;
+	line-height: 1.5;
 	color: $body;
 	background-color: $background;
 }
 
+.colophon,
 .intro,
 .panel,
-footer,
-.colophon {
+footer {
 	display: flex;
 	flex-flow: column;
-	align-items: center;
 	align-content: center;
+	align-items: center;
 	height: 100vh;
 	padding: 2.5em;
 
@@ -35,7 +39,7 @@ footer,
 		display: grid;
 		grid-template-columns: 1fr;
 
-		@include gtTablet {
+		@include gt-tablet {
 			grid-template-columns: 1fr 1fr;
 			grid-gap: 2em;
 		}
@@ -43,9 +47,13 @@ footer,
 }
 
 .intro,
-footer { justify-content: center; }
+footer {
+	justify-content: center;
+}
 
-.panel { justify-content: space-between; }
+.panel {
+	justify-content: space-between;
+}
 
 .text {
 	width: 100%;
@@ -60,20 +68,27 @@ h4 {
 	line-height: 1.1;
 }
 
-h1 { font-size: 3.33em; }
+h1 {
+	font-size: 3.33em;
+}
 
-h2 { font-size: 2.5em; }
+h2 {
+	font-size: 2.5em;
+}
 
 h3,
-h4 { font-size: 1.67em; }
+h4 {
+	font-size: 1.67em;
+}
 
 h4 {
 	@extend %caps;
 	margin-bottom: 0.25em;
 }
 
-
-p { width: 100%; }
+p {
+	width: 100%;
+}
 
 ul {
 	padding-left: 0;

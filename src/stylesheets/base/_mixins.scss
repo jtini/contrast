@@ -23,19 +23,19 @@
 }
 
 // Media Queries
-@mixin gtTablet {
+@mixin gt-tablet {
   @media screen and (min-width: #{$tablet}) {
     @content;
   }
 }
 
-@mixin gtDesktop {
+@mixin gt-desktop {
   @media screen and (min-width: #{$desktop}) {
     @content;
   }
 }
 
-@mixin gtDesktopHD {
+@mixin gt-desktop-hd {
   @media screen and (min-width: #{$desktopHD}) {
     @content;
   }
