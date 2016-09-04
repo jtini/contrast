@@ -1,13 +1,20 @@
 .illustration {
 	position: relative;
-	width: 100%;
+	width: 70%;
+	max-width: 380px;
 	background-color: $white;
+
+	@include gt-tablet { width: 100%; }
 }
 
 .illustration:after {
 	content: '';
 	display: block;
-	padding-top: 100%;
+	padding-top: 70%;
+
+	@media screen and (min-height: #{$min-height}) {
+		padding-top: 100%;
+	}
 }
 
 .illustration__background {

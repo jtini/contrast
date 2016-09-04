@@ -30,6 +30,7 @@ body {
 footer {
 	display: flex;
 	flex-flow: column;
+	justify-content: center;
 	align-content: center;
 	align-items: center;
 	height: 100vh;
@@ -46,6 +47,11 @@ footer {
 	}
 }
 
+.panel,
+.footer {
+	min-height: $min-height;
+}
+
 .intro,
 footer {
 	justify-content: center;
@@ -53,6 +59,11 @@ footer {
 
 .panel {
 	justify-content: space-between;
+
+	@supports (display: grid) {
+		justify-items: center;
+		align-content: space-between;
+	}
 }
 
 .text {

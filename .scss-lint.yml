@@ -149,6 +149,7 @@ linters:
       - align-items
       - grid-template-columns
       - grid-template-rows
+      - justify-items
       - overflow
       - box-sizing
       - width
@@ -177,7 +178,7 @@ linters:
   PropertySpelling:
     enabled: true
     extra_properties: [
-      'grid-template-columns', 'grid-template-rows', 'grid-gap'
+      'grid-template-columns', 'grid-template-rows', 'grid-gap', 'justify-items'
     ]
     disabled_properties: []
 

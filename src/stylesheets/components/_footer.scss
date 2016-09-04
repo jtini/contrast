@@ -1,3 +1,9 @@
+.footer {
+	@supports (display: grid) {
+		justify-items: center;
+	}
+}
+
 .footer__top {
 	margin-bottom: 4em;
 }
