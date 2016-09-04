@@ -1,11 +1,11 @@
 .panel,
 footer {
-	background-color: #EEE;
+	background-color: $light-grey;
 }
 
 .color-list__item {
-	font-size: 0.9em;
 	opacity: 0.5;
+	font-size: 0.9em;
 	transition: opacity 300ms ease;
 
 	&:hover { opacity: 1; }

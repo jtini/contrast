@@ -1,13 +1,13 @@
 .colophon {
 	position: fixed;
 	top: 0;
-	left: 0;
 	right: 0;
 	bottom: 0;
-	visibility: hidden;
+	left: 0;
 	opacity: 0;
+	visibility: hidden;
 	transition: opacity 300ms ease, visibility 0s linear 600ms;
-	background-color: rgba(0,0,0,0.9);
+	background-color: $overlay-dark;
 
 	.colophon-toggle:checked + & {
 		opacity: 1;
@@ -20,7 +20,7 @@
 	ul,
 	li,
 	a,
-	label { color: #fff; }
+	label { color: $white; }
 }
 
 .colophon-toggle {
@@ -37,6 +37,6 @@
 	right: 0;
 	transform: translate(-50%, 50%);
 	font-size: 4em;
-	line-height: .5;
+	line-height: 0.5;
 	cursor: pointer;
 }

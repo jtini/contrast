@@ -1,17 +1,23 @@
-/* Sizes */
-$minHeight: 440px;
-$minWidth: 300px;
+// Sizes
+$min-height: 440px;
+$min-width: 300px;
 $tablet: 750px;
 $desktop: 1000px;
-$desktopHD: 1200px;
+$desktop-hd: 1200px;
 
-/* Colors */
+// Colors
 $transparent: rgba(0, 0, 0, 0);
+$overlay-dark: rgba(0, 0, 0, 0.9);
+$white: #fff;
+$light-grey: #eee;
 $body: #272727;
 $background: #fafafa;
-$introBg: #272932;
+$intro-bg: #272932;
+$cyan: #07e0ef;
+$cool-grey: #c9daea;
+$red: #DE544A;
 
-/* Styles */
+// Styles
 %caps {
 	text-transform: uppercase;
 	letter-spacing: 1px;

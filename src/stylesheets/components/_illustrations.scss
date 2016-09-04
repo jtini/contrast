@@ -1,7 +1,7 @@
 .illustration {
 	position: relative;
 	width: 100%;
-	background-color: #FFF;
+	background-color: $white;
 }
 
 .illustration:after {
@@ -22,8 +22,8 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 16%;
 	transform: translate(-50%, -50%);
+	width: 16%;
 
 	&:after {
 		content: '';
@@ -36,14 +36,8 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 80%;
 	transform: translate(-50%, -50%);
-
-	// &:after {
-	// 	content: '';
-	// 	display: block;
-	// 	padding-top: 100%;
-	// }
+	width: 80%;
 }
 
 .illustration__foreground-row {
