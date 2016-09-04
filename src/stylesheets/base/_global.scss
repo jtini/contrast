@@ -50,7 +50,10 @@ footer {
 .panel {
 	justify-content: space-between;
 
-
+	@include gt-tablet {
+		flex-flow: row nowrap;
+		justify-content: center;
+	}
 
 	@supports (display: grid) {
 		display: grid;
@@ -70,8 +73,13 @@ footer {
 	width: 100%;
 	max-width: em(480, 18);
 
+	@include gt-tablet { margin-right: 2em; }
+
 	@supports (display: grid) {
-		@include gt-tablet { justify-self: end; }
+		@include gt-tablet {
+			margin-right: 0;
+			justify-self: end;
+		}
 	}
 }
 
