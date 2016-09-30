@@ -24,6 +24,12 @@ body {
 	background-color: $background;
 }
 
+a,
+a:hover,
+a:visited {
+	color: $body;
+}
+
 .colophon,
 .intro,
 .panel,
